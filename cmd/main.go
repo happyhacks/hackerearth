@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/gearsMachine"
+	"hackerearth/pkg/bigPAndParty"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	gearsMachine.Solve()
+	bigPAndParty.Solve()
 	log.Println("end")
 }
