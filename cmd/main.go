@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/bigPAndParty"
+	"hackerearth/pkg/questionPaper"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	bigPAndParty.Solve()
+	questionPaper.Solve()
 	log.Println("end")
 }
