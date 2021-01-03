@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/connectedHorses"
+	"hackerearth/pkg/bennyAndTheUniverse"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	connectedHorses.Solve()
+	bennyAndTheUniverse.Solve()
 	log.Println("end")
 }
