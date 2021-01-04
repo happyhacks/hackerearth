@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/bennyAndTheUniverse"
+	"hackerearth/pkg/bracketSequence"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	bennyAndTheUniverse.Solve()
+	bracketSequence.Solve()
 	log.Println("end")
 }

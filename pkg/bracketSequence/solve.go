@@ -1,62 +1,38 @@
 package bracketSequence
 
-import "fmt"
-
-type (
-	Stack struct {
-		top    *node
-		length int
-	}
-	node struct {
-		value interface{}
-		prev  *node
-	}
+import (
+	"fmt"
+	"log"
 )
 
-// Create a new stack
-func NewStack() *Stack {
-	return &Stack{nil, 0}
-}
-
-// Return the number of items in the stack
-func (this *Stack) Len() int {
-	return this.length
-}
-
-// View the top item on the stack
-func (this *Stack) Peek() interface{} {
-	if this.length == 0 {
-		return nil
-	}
-	return this.top.value
-}
-
-// Pop the top item of the stack and return it
-func (this *Stack) Pop() interface{} {
-	if this.length == 0 {
-		return nil
-	}
-
-	n := this.top
-	this.top = n.prev
-	this.length--
-	return n.value
-}
-
-// Push a value onto the top of the stack
-func (this *Stack) Push(value interface{}) {
-	n := &node{value, this.top}
-	this.top = n
-	this.length++
-}
+const MaxUint = ^uint(0)
+const MinUint = 0
+const MaxInt = int(MaxUint >> 1)
+const MinInt = -MaxInt - 1
 
 func Solve() {
 	var s string
 	fmt.Scan(&s)
-	st := NewStack()
+	mp := map[int]int{}
+	var o, c int
 	for _, i := range s {
+		mp[o-c]++
 		if i == '(' {
-			st.Push(i)
+			o++
+		} else if i == ')' {
+			c++
 		}
+	}
+	log.Println(mp)
+	if o == c {
+		min := MaxInt
+		for key := range mp {
+			if key < min {
+				min = key
+			}
+		}
+		fmt.Println(mp[min])
+	} else {
+		fmt.Println(0)
 	}
 }
