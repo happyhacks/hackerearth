@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/bachaLo"
+	"hackerearth/pkg/escapeFromGrid"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	bachaLo.Solve()
+	escapeFromGrid.Solve()
 	log.Println("end")
 }
