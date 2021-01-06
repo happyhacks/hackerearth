@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/escapeFromGrid"
+	"hackerearth/pkg/cheapestWay"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	escapeFromGrid.Solve()
+	cheapestWay.Solve()
 	log.Println("end")
 }
