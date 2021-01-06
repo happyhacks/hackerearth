@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/cheapestWay"
+	"hackerearth/pkg/shortestPathProblem"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	cheapestWay.Solve()
+	shortestPathProblem.Solve()
 	log.Println("end")
 }
