@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/shortestPathProblem"
+	"hackerearth/pkg/palindromicChanges"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	shortestPathProblem.Solve()
+	palindromicChanges.Solve()
 	log.Println("end")
 }
