@@ -1,12 +1,12 @@
 package main
 
 import (
-	"hackerearth/pkg/palindromicChanges"
+	"hackerearth/pkg/makeTheArrayEven"
 	"log"
 )
 
 func main() {
 	log.Println("Start")
-	palindromicChanges.Solve()
+	makeTheArrayEven.Solve()
 	log.Println("end")
 }
